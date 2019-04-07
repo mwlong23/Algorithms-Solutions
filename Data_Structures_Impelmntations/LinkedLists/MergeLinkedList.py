@@ -1,12 +1,9 @@
 import LinkedList as ll
-import inspect
 
-my_list = ll.ListNode()
 
-my_list = [12,2,33,44,3]
+l1 = ll.list_to_linkedlist([2,5,7])
+l2 = ll.list_to_linkedlist([3,11])
 
-my_linked_list = ll.list_to_linkedList(my_list)
+ll.print_linked_list(l1)
+ll.print_linked_list(l2)
 
-ll.print_linked_list(my_linked_list)
-
-print(ll.search(my_linked_list, 11))

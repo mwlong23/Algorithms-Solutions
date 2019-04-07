@@ -7,14 +7,17 @@ class ListNode:
 
 
 
-def list_to_linkedList(arr):
-    ll = ListNode()
-    print(ll)
-    working_node = ll
-    for el in arr:
-        working_node.next_node = ListNode(el)
-        working_node = working_node.next_node
-    return ll
+def list_to_linkedlist(arr):
+    head = ListNode(arr[0])
+    working_node = head
+    for i in range(1, len(arr)):
+        new_node = ListNode(arr[i])
+        working_node.next_node = new_node
+        working_node = new_node
+    return head
+
+
+
 
 def print_linked_list(l):
     while l:
