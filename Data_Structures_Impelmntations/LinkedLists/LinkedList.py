@@ -1,9 +1,22 @@
 # Uses Python 3
+class LinkedList:
+    def __init__(self, head=None, tail=None):
+        self.head = head
+        self.tail = tail
+
+
+
 
 class ListNode:
     def __init__(self, data=0, next_node=None):
         self.data = data
         self.next_node = next_node
+
+    def get_next(self,node):
+        if node.next_node:
+            return node.next_node
+        else:
+            return None
 
 
 
@@ -21,7 +34,7 @@ def list_to_linkedlist(arr):
 
 def print_linked_list(l):
     while l:
-        print(l.data)
+        print(l.data, end=' ')
         l = l.next_node
 
 
