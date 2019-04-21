@@ -12,7 +12,7 @@ class ListNode:
         self.data = data
         self.next_node = next_node
 
-    def get_next(self,node):
+    def get_next(self, node):
         if node.next_node:
             return node.next_node
         else:
@@ -53,3 +53,5 @@ def insert_after(node, new_node):
 def delete_after(node):
     node.next_node = node.next_node.next_node
 
+if __name__ == '__main__':
+    pass
